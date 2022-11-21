@@ -41,5 +41,3 @@ app.use('/api', require('./routes/api/index'))
 //   app.use('/api/test', require('./routes/api/test/test'))
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
-
-module.exports.handler = serverless(app)
