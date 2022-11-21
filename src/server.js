@@ -3,7 +3,6 @@ const express = require('express')
 require('dotenv').config()
 const connectDB = require('./db/db')
 const excludeTrackAndTrace = require('./middleware/excludeTrackAndTrace')
-const serverless = require('serverless-http')
 
 const PORT = process.env.PORT
 const APP_ENV = process.env.APP_ENV
@@ -33,7 +32,7 @@ app.use(cors())
 
 // // define routes
 
-app.use('/.netlify/functions/api', require('./routes/api/index'))
+app.use('/api', require('./routes/api/index'))
 // app.use('/api/marketing', require('./routes/api/marketing/marketing.index'))
 // app.use('/api/store', require('./routes/api/store'))
 // app.use('/api/profile', require('./routes/api/profile'))
