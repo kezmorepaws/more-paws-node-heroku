@@ -28,7 +28,7 @@ app.use(cors())
 //   next()
 // })
 
-// app.get('/', (req, res) => res.send('squib API Running'))
+app.get('/', (req, res) => res.send('MorePaws API Running'))
 
 // // define routes
 
