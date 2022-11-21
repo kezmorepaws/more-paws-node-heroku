@@ -4,10 +4,10 @@
   "description": "Node server for My Local Deli",
   "main": "server.js",
   "scripts": {
-    "start": "cd src && node server",
-    "server": "cd src && nodemon server",
+    "start": "node server",
+    "server": "nodemon server",
     "client": "npm start --prefix client",
-    "sass-watch": "sass --no-source-map --watch src/sass/main.scss src/public/main.css"
+    "sass-watch": "sass --no-source-map --watch sass/main.scss public/main.css"
   },
   "author": "Kez Anwar",
   "license": "MIT",
